@@ -202,8 +202,7 @@ class JAAD(object):
                 img_count += 1
                 out_path = join(save_images_path, f"{frame_num:05d}.png")
                 if not exists(out_path):
-                    image = image[:256,:,:]
-                    cv2.imwrite(out_path, image)
+                    cv2.imwrite(out_path, image[:256,:,:])
                 else:
                     print('path %s already exists')
                 success, image = vidcap.read()
