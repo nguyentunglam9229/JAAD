@@ -201,6 +201,7 @@ class JAAD(object):
                 img_count += 1
                 out_path = join(save_images_path, f"{frame_num:05d}.png")
                 if not exists(out_path):
+                    image = image[:256,:,:]
                     cv2.imwrite(out_path, image)
                 else:
                     print('path %s already exists')
