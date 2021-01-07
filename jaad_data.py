@@ -197,7 +197,7 @@ class JAAD(object):
             if not success:
                 print('Failed to open the video {}'.format(vid))
             while success:
-                self.update_progress(img_count / num_frames)
+                print(save_images_path)
                 img_count += 1
                 out_path = join(save_images_path, f"{frame_num:05d}.png")
                 if not exists(out_path):
