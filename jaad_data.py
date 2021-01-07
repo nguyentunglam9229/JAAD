@@ -191,13 +191,14 @@ class JAAD(object):
                 makedirs(save_images_path)
 
             vidcap = cv2.VideoCapture(video_clip_path)
+            print(video_clip_path)
             success, image = vidcap.read()
             frame_num = 0
             img_count = 0
             if not success:
                 print('Failed to open the video {}'.format(vid))
             while success:
-                print(save_images_path)
+                
                 img_count += 1
                 out_path = join(save_images_path, f"{frame_num:05d}.png")
                 if not exists(out_path):
