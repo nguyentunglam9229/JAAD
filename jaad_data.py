@@ -70,7 +70,7 @@ class JAAD(object):
         self._annotation_attributes_path = join(self._jaad_path, 'annotations_attributes')
         self._annotation_appearance_path = join(self._jaad_path, 'annotations_appearance')
         self._clips_path = join(self._jaad_path, 'JAAD_clips')
-        self._images_path = join(self._jaad_path, 'images')
+        self._images_path = join(self._jaad_path, 'rgb-images')
 
     # Path generators
     @property
