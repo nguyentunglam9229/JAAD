@@ -1,0 +1,6 @@
+base = /content/drive/MyDrive/NLP_and_CV_Projects/CV/Tuyen/rgb-images
+train = /content/drive/MyDrive/NLP_and_CV_Projects/CV/Tuyen/rgb-images/trainlist.txt
+valid = /content/drive/MyDrive/NLP_and_CV_Projects/CV/Tuyen/rgb-images/testlist.txt
+names = data/ucf24.names
+backup = backup
+gpus  = 0
